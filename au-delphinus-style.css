@@ -1,0 +1,301 @@
+
+/* Custom AU Delphinus-Inspired Styles */
+
+body {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #FEF5E7;
+  color: #1a1a1a;
+}
+
+
+
+
+.nhm-footer {
+  background-color: #214286;
+  color: white;
+  padding: 3rem 1rem;
+  font-family: sans-serif;
+}
+
+.nhm-footer__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+  gap: 2rem;
+}
+
+.nhm-footer__column {
+  flex: 1 1 300px;
+}
+
+.nhm-footer__column h3 {
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.nhm-footer__column p,
+.nhm-footer__column a {
+  font-size: 0.95rem;
+  color: white;
+  text-decoration: none;
+  line-height: 1.5;
+}
+
+.nhm-footer__column a:hover {
+  text-decoration: underline;
+}
+
+.nhm-footer__socials a {
+  margin-right: 0.5rem;
+  display: inline-block;
+  margin-top: 1rem;
+}
+
+.nhm-footer__socials img {
+  width: 24px;
+  height: 24px;
+  filter: brightness(0) invert(1);
+}
+
+form input[type="email"] {
+  padding: 0.5rem;
+  margin: 0.5rem 0;
+  width: 100%;
+  max-width: 300px;
+  border: none;
+  border-radius: 4px;
+}
+
+form button {
+  padding: 0.5rem 1rem;
+  background: white;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: 0.5rem;
+}
+
+
+
+header {
+  background-color: #ffffff;
+  padding: 1rem 2rem;
+  color: #002f6c;
+}
+
+.au-header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  height: 80px;
+  border-radius: 50%;
+}
+
+.logo{
+  display: flex;
+  align-items: left;
+  border-radius: 80px;
+}
+
+.seminar {
+ width: 100%;
+  height: auto;
+  display: block;
+  border-radius: var(--border-radius); /* optional, for rounded corners */
+  object-fit: cover; /* use 'contain' if you want full image without cropping */
+}
+
+.man{
+   width: 100%;
+  height: auto;
+  display: block;
+  border-radius: var(--border-radius); /* optional, for rounded corners */
+  object-fit: cover; /* use 'contain' if you want full image without cropping */
+}
+
+.carousel-container {
+  overflow-x: auto;
+  white-space: nowrap;
+  padding-bottom: 1rem;
+}
+
+.carousel-track {
+  display: inline-flex;
+  gap: 1rem;
+}
+
+.au-card {
+  width: 300px; /* or whatever you want */
+  height: auto;
+  overflow: hidden;
+  white-space: normal;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.au-card__content {
+  padding: 1rem;
+}
+
+
+.carousel-wrapper {
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+}
+
+.carousel-wrapper::-webkit-scrollbar {
+  display: none; /* Hide scrollbar */
+}
+
+.au-grid__item {
+  flex: 0 0 auto;
+  scroll-snap-align: start;
+}
+
+
+
+.carousel-img {
+  width: 100%;
+  height: auto;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+
+.scroll-snap-container {
+  scroll-snap-type: x mandatory;
+}
+
+.carousel-track > .au-card {
+  scroll-snap-align: start;
+}
+
+
+header h1 {
+  margin: 0;
+  font-size: 1.8rem;
+}
+
+.au-main-nav__list {
+  list-style: none;
+  padding: 0;
+  margin-top: 0.5rem;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.au-main-nav__item a {
+  color:#002f6c;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.au-main-nav__item a:hover {
+  text-decoration: underline;
+}
+
+.au-container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 2rem;
+}
+
+.au-section {
+  padding: 2rem 0;
+}
+
+.au-section--alt {
+  background-color: #e9f1f7;
+}
+
+.au-section--center {
+  text-align: center;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+h3 {
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.au-btn {
+  padding: 0.6rem 1.2rem;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 0.5rem;
+  display: inline-block;
+}
+
+.au-btn--primary {
+  background-color: #002f6cc6;
+  color: white;
+}
+
+.au-btn--secondary {
+  background-color: #f2f2f2;
+  color: #333;
+}
+
+.au-btn--tertiary {
+  background-color: transparent;
+  color: #002f6cd2;
+  border: 1px solid #002f6cd2;
+}
+
+.au-grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.au-grid--2 {
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.au-card {
+  background-color: white;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.au-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.au-flex--center {
+  justify-content: center;
+}
+
+.au-flex--gap {
+  gap: 1rem;
+}
+
+.au-margin-top {
+  margin-top: 1.5rem;
+}
+
+.au-text--italic {
+  font-style: italic;
+}
