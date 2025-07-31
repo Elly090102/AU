@@ -373,3 +373,10 @@ p {
   width: 24px;
   height: 24px;
 }
+.responsive-logo {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  padding: 10px;
+}
