@@ -328,6 +328,19 @@ p {
   box-shadow: 0 0 5px rgba(0,0,0,0.1);
 }
 
+.au-card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.au-card__content {
+  flex-grow: 1;
+  display: flex;
+}
+
+
+
 .au-flex {
   display: flex;
   flex-wrap: wrap;
@@ -373,10 +386,106 @@ p {
   width: 24px;
   height: 24px;
 }
+
 .responsive-logo {
-  max-width: 100%;
-  height: auto;
   display: block;
+  max-height: 80px;   /* limit height */
+  max-width: 100%;    /* limit width */
+  height: auto;
+  width: auto;
   margin: 0 auto;
-  padding: 10px;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px; /* or less, adjust */
+  overflow: hidden;
+}
+
+.demo-card {
+  max-width: 900px;
+  margin: 2rem auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+}
+
+.logo-container {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.responsive-logo {
+  max-height: 80px;
+  height: auto;
+  width: auto;
+}
+
+.demo-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.demo-text {
+  flex: 1;
+  min-width: 250px;
+  max-width: 400px;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.demo-button-wrapper {
+  flex: 0 0 auto;
+}
+
+.demo-button {
+  display: inline-block;
+  padding: 1rem 1.5rem;
+  text-align: center;
+  border-radius: 6px;
+  font-weight: bold;
+  background-color: #244674;
+  color: #fff;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  white-space: nowrap;
+}
+
+.demo-button:hover {
+  background-color: #183255;
+}
+
+
+
+
+.au-btn {
+  display: inline-block;         /* Make sure it's not stretching full width */
+  max-height: none !important;   /* Remove any forced tall height */
+  padding: 10px 16px;            /* Standard padding */
+  line-height: 1.4;              /* Ensure readable text */
+  white-space: nowrap;          /* Prevent text from wrapping */
+}
+
+@media (max-width: 768px) {
+  .demo-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .demo-button {
+    width: 100%;
+  }
+}
+.au-grid.au-display-flex.au-justify-content-center {
+  margin-bottom: 8rem;
+  margin-top: 8rem;
 }
