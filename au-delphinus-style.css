@@ -136,7 +136,7 @@ header {
   color: #002f6c;
 }
 
-.au-header-inner {
+.au-header-inner { 
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -147,7 +147,7 @@ header {
 
 .logo{
   display: flex;
-  align-items: left;
+  align-items: center;
   border-radius: 80px;
 }
 
